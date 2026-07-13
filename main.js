@@ -1,5 +1,5 @@
 /* ============================================================
-   NestShield — main.js
+   NestShield: main.js
    Scroll reveal, sticky nav, mobile menu, form UX
    ============================================================ */
 
@@ -108,7 +108,7 @@
   const form = document.getElementById('contact-form');
   if (form) {
     form.addEventListener('submit', (e) => {
-      // The form uses mailto — let it open naturally.
+      // The form uses mailto, so let it open naturally.
       // Add a brief visual confirmation.
       const btn = form.querySelector('button[type="submit"]');
       const originalText = btn.innerHTML;

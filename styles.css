@@ -1,5 +1,5 @@
 /* ============================================================
-   NESTSHIELD — styles.css
+   NESTSHIELD: styles.css
    Design system: deep navy hero + clean white content sections
    Brand primary: steel blue (#4A87BB) | Brand accent: sky blue (#0ea5e9)
    ============================================================ */
@@ -20,7 +20,7 @@
   --blue-400: #38bdf8;
   --blue-300: #7dd3fc;
 
-  /* Brand palette — steel blue primary */
+  /* Brand palette: steel blue primary */
   --brand-primary: #4A87BB;
   --brand-primary-light: #6BA3D0;
   --brand-primary-dark: #3A6A93;
@@ -217,7 +217,7 @@ ul { list-style: none; }
 .reveal-delay-2 { transition-delay: 0.2s; }
 .reveal-delay-3 { transition-delay: 0.3s; }
 
-/* Hero must be visible on first paint — no fade-in delay */
+/* Hero must be visible on first paint; no fade-in delay */
 .hero .reveal {
   opacity: 1;
   transform: none;
@@ -655,7 +655,7 @@ ul { list-style: none; }
   overflow: hidden;
   transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition);
 }
-/* Top accent line — unique color per card via nth-child */
+/* Top accent line: unique color per card via nth-child */
 .problem-card::before {
   content: '';
   position: absolute;
@@ -726,7 +726,7 @@ ul { list-style: none; }
    PHASED INFRASTRUCTURE ROADMAP
    ============================================================ */
 
-/* Section — blueprint grid continuity from hero + risk */
+/* Section: blueprint grid continuity from hero + risk */
 .section-roadmap {
   background: linear-gradient(180deg, #111520 0%, #0e1320 100%);
   position: relative;
@@ -746,7 +746,7 @@ ul { list-style: none; }
 }
 .section-roadmap .container { position: relative; z-index: 1; }
 
-/* Phase track — vertical layout with connecting line */
+/* Phase track: vertical layout with connecting line */
 .phase-track {
   display: flex;
   flex-direction: column;
@@ -827,7 +827,7 @@ ul { list-style: none; }
 .phase-status-queued { color: rgba(255,255,255,0.25); }
 .phase-status-future { color: rgba(255,255,255,0.18); }
 
-/* "Coming 2026" badge — clearly readable against dark phase cards */
+/* "Coming 2026" badge: clearly readable against dark phase cards */
 .phase-status-coming {
   color: var(--blue-300);
   background: rgba(14,165,233,0.12);
@@ -848,7 +848,7 @@ ul { list-style: none; }
   transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition);
 }
 
-/* Phase 1 — Active with orange glow */
+/* Phase 1: Active with orange glow */
 .phase-card-active {
   background: rgba(74,135,187,0.05);
   border: 1px solid rgba(74,135,187,0.25);
@@ -865,7 +865,7 @@ ul { list-style: none; }
   transform: translateY(-2px);
 }
 
-/* Phases 2 & 3 — Queued/dim glass */
+/* Phases 2 & 3: Queued/dim glass */
 .phase-card-queued {
   background: rgba(255,255,255,0.025);
   border: 1px solid rgba(255,255,255,0.07);
@@ -876,7 +876,7 @@ ul { list-style: none; }
   transform: translateY(-2px);
 }
 
-/* Inner layout — icon + body side by side */
+/* Inner layout: icon + body side by side */
 .phase-card-inner {
   display: flex;
   gap: var(--space-xl);
@@ -956,7 +956,7 @@ ul { list-style: none; }
 }
 .link-accent:hover { color: var(--brand-primary-light); }
 
-/* Responsive — collapse phase track on mobile */
+/* Responsive: collapse phase track on mobile */
 @media (max-width: 700px) {
   .phase-track { padding-left: 0; }
   .phase-track-line { display: none; }
@@ -1102,7 +1102,7 @@ ul { list-style: none; }
   color: rgba(255,255,255,0.45);
 }
 
-/* Step sublabel — "Primary Deliverable", "Technical Moat", etc. */
+/* Step sublabel: "Primary Deliverable", "Technical Moat", etc. */
 .step-sublabel {
   display: block;
   font-size: 0.7rem;
@@ -1180,7 +1180,7 @@ ul { list-style: none; }
   gap: var(--space-lg);
 }
 
-/* Glassmorphism cards — monochrome/clinical */
+/* Glassmorphism cards: monochrome/clinical */
 .why-card {
   background: rgba(255,255,255,0.035);
   border: 1px solid rgba(255,255,255,0.08);
@@ -1192,7 +1192,7 @@ ul { list-style: none; }
   overflow: hidden;
   transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition);
 }
-/* Hairline top accent — uniform blue, not per-card color */
+/* Hairline top accent: uniform blue, not per-card color */
 .why-card::before {
   content: '';
   position: absolute;
@@ -1206,7 +1206,7 @@ ul { list-style: none; }
   transform: translateY(-2px);
 }
 
-/* Monochrome icon — white at low opacity, no color fill */
+/* Monochrome icon: white at low opacity, no color fill */
 .why-icon {
   width: 42px; height: 42px;
   background: rgba(255,255,255,0.05);
@@ -1224,7 +1224,7 @@ ul { list-style: none; }
   color: var(--blue-300);
   border-color: rgba(56,189,248,0.2);
 }
-/* All why-icons unified monochrome — no orange overrides */
+/* All why-icons unified monochrome; no orange overrides */
 .why-icon svg { width: 20px; height: 20px; }
 
 .why-card h3 {
@@ -1267,7 +1267,7 @@ ul { list-style: none; }
 
 .verticals-sub { color: rgba(255,255,255,0.45); }
 
-/* 2-column grid — each card is a full-width horizontal panel */
+/* 2-column grid: each card is a full-width horizontal panel */
 .verticals-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -1291,7 +1291,7 @@ ul { list-style: none; }
   transform: translateY(-3px);
 }
 
-/* Left accent bar — 4px vertical stripe */
+/* Left accent bar: 4px vertical stripe */
 .vertical-card-accent {
   position: absolute;
   top: 0; left: 0; bottom: 0;
@@ -1343,7 +1343,7 @@ ul { list-style: none; }
   letter-spacing: -0.01em;
 }
 
-/* Strategic hook line — italic, accent colored */
+/* Strategic hook line: italic, accent colored */
 .vertical-hook {
   font-size: 0.75rem;
   font-weight: 600;
@@ -1385,7 +1385,7 @@ ul { list-style: none; }
   margin-top: 1px;
 }
 
-/* Inline orange hook — LoRaWAN, ROI, etc. */
+/* Inline orange hook: LoRaWAN, ROI, etc. */
 .vertical-tech-hook {
   color: var(--brand-primary);
   font-weight: 700;
@@ -1618,7 +1618,7 @@ ul { list-style: none; }
 }
 .footer-links-group a:hover { color: var(--white); }
 
-/* Flat (single-block) footer layout — replaces .footer-inner column grid */
+/* Flat (single-block) footer layout; replaces .footer-inner column grid */
 .footer-flat {
   text-align: center;
   padding: var(--space-4xl) var(--space-xl) var(--space-3xl);
@@ -1816,7 +1816,7 @@ ul { list-style: none; }
 }
 
 /* ============================================================
-   LIGHT THEME OVERRIDE — 2026-05-12
+   LIGHT THEME OVERRIDE: 2026-05-12
    Flips the dark navy palette to a light theme with alternating
    section tints. Brand steel-blue (#4A87BB) stays as the primary
    accent. To revert, delete this block.
@@ -2130,7 +2130,7 @@ body { background: var(--surface-0); color: var(--ink-700); }
 
 .section-tag-light { color: var(--brand-primary-dark); background: rgba(74,135,187,0.12); }
 
-/* Keep footer deep navy on purpose — grounds the page. */
+/* Keep footer deep navy on purpose; it grounds the page. */
 .site-footer { background: var(--surface-deep); }
 .footer-tagline   { color: rgba(255,255,255,0.75); }
 .footer-location  { color: rgba(255,255,255,0.55); }
@@ -2304,7 +2304,7 @@ body { background: var(--surface-0); color: var(--ink-700); }
 @media(max-width:520px){.footer-columns{grid-template-columns:1fr}.assessment-sheet{padding:1.2rem}.chart-legend span{font-size:.84rem}}
 
 /* ============================================================
-   BLUEPRINT BACKGROUND PATTERN — 2026-05-16
+   BLUEPRINT BACKGROUND PATTERN: 2026-05-16
    Adds an architectural-drawing pattern across all light sections.
    Major grid (80px) + minor grid (20px) + small registration
    crosshairs at every major intersection. Brand steel-blue at
@@ -2333,7 +2333,7 @@ body { background: var(--surface-0); color: var(--ink-700); }
   --blueprint-position: 0 0, 0 0, 0 0, 0 0, 0 0;
 }
 
-/* Hero — replace plain grid with full blueprint pattern */
+/* Hero: replace plain grid with full blueprint pattern */
 .hero-grid {
   background-image: var(--blueprint-pattern);
   background-size: var(--blueprint-size);
@@ -2342,7 +2342,7 @@ body { background: var(--surface-0); color: var(--ink-700); }
   mask-image: radial-gradient(ellipse 95% 85% at 42% 50%, black 20%, transparent 100%);
 }
 
-/* Risk section — was missing its own pattern, give it one */
+/* Risk section was missing its own pattern, so give it one */
 .risk-section {
   position: relative;
 }
@@ -2373,13 +2373,13 @@ body { background: var(--surface-0); color: var(--ink-700); }
 }
 
 /* Newsletter section ::before only had a single horizontal grid in
-   the override — needs explicit pattern so it inherits the full set */
+   the override; needs explicit pattern so it inherits the full set */
 .section-newsletter::before {
   inset: 0;
 }
 
 /* ============================================================
-   PHASE CARD FIX — 2026-05-16
+   PHASE CARD FIX: 2026-05-16
    Phase-* classes were white-on-dark in the original theme.
    Light-mode override missed them, leaving "What we install"
    reading as white text on the new light blue card. Flip them.
@@ -2420,7 +2420,7 @@ body { background: var(--surface-0); color: var(--ink-700); }
 .phase-status-future { color: var(--ink-400); }
 
 /* ============================================================
-   PHASE CARD FIX — 2026-05-16
+   PHASE CARD FIX: 2026-05-16
    Phase-* classes were white-on-dark in the original theme.
    Light-mode override missed them, leaving "What we install"
    reading as white text on the new light blue card. Flip them.
@@ -2461,14 +2461,14 @@ body { background: var(--surface-0); color: var(--ink-700); }
 .phase-status-future { color: var(--ink-400); }
 
 /* ============================================================
-   MOBILE FIX — 2026-05-16
+   MOBILE FIX: 2026-05-16
    Two issues spotted on phone view:
-   1. Logo overlapping H1 — hero-inner top-padding too tight
+   1. Logo overlapping H1: hero-inner top-padding too tight
       under the fixed 68px nav.
-   2. Trust-ribbon stats overflowing horizontally — original
+   2. Trust-ribbon stats overflowing horizontally: original
       mobile rule targeted .hero-stats/.stat-divider which
       don't exist; actual classes are .trust-dashboard-inner
-      and .trust-stat-divider. With the new wider $30K–$90K
+      and .trust-stat-divider. With the new wider $30K to $90K
       value, three columns can't fit. Stack vertically.
    ============================================================ */
 
@@ -2487,8 +2487,8 @@ html, body { overflow-x: hidden; }
   /* Hero gets a bit more vertical so the stack fits */
   .hero { height: auto; min-height: 100vh; }
 
-  /* Stack the trust ribbon vertically — fixes the clipped
-     "5–5%" / "28 Yea" you saw at the edges */
+  /* Stack the trust ribbon vertically; fixes the clipped
+     "5 to 5%" / "28 Yea" you saw at the edges */
   .trust-dashboard-inner {
     flex-direction: column;
     align-items: stretch;
