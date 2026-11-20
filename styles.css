@@ -2679,3 +2679,15 @@ html, body { overflow-x: hidden; }
       url("nestshield-hero-buildings.png");
   }
 }
+
+/* Headings on dark-background sections stay white (beats the light-theme .text-white remap) */
+.section-title.section-title-on-dark { color: #ffffff; }
+
+/* Two-column feature list (Additional Capabilities): 2 cols desktop, 1 col mobile */
+.phase-features.phase-features-2col { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 700px) {
+  .phase-features.phase-features-2col { grid-template-columns: 1fr; }
+}
+
+/* Netlify honeypot: hidden from humans */
+.form-honeypot { display: none; }
